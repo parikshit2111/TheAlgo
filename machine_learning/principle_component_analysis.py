@@ -3,18 +3,18 @@ Principal Component Analysis (PCA) is a dimensionality reduction technique
 used in machine learning. It transforms high-dimensional data into a lower-dimensional
 representation while retaining as much variance as possible.
 
-This implementation includes:
+This implementation follows best practices, including:
 - Standardizing the dataset.
 - Computing principal components using Singular Value Decomposition (SVD).
 - Returning transformed data and explained variance ratio.
+
+More details: https://en.wikipedia.org/wiki/Principal_component_analysis
 """
 
 import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from sklearn.datasets import load_iris
-from typing import tuple
-
 
 def collect_dataset() -> tuple[np.ndarray, np.ndarray]:
     """
