@@ -7,14 +7,14 @@ This implementation follows best practices, including:
 - Standardizing the dataset.
 - Computing principal components using Singular Value Decomposition (SVD).
 - Returning transformed data and explained variance ratio.
-
-More details: https://en.wikipedia.org/wiki/Principal_component_analysis
 """
 
+import doctest
 import numpy as np
 from sklearn.decomposition import PCA
-from sklearn.preprocessing import StandardScaler
 from sklearn.datasets import load_iris
+from sklearn.preprocessing import StandardScaler
+
 
 def collect_dataset() -> tuple[np.ndarray, np.ndarray]:
     """
@@ -80,7 +80,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    import doctest
-
     doctest.testmod()
     main()
