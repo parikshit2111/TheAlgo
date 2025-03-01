@@ -13,10 +13,10 @@ import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from sklearn.datasets import load_iris
-from typing import Tuple
+from typing import tuple
 
 
-def collect_dataset() -> Tuple[np.ndarray, np.ndarray]:
+def collect_dataset() -> tuple[np.ndarray, np.ndarray]:
     """
     Collects the dataset (Iris dataset) and returns feature matrix and target values.
 
@@ -33,7 +33,7 @@ def collect_dataset() -> Tuple[np.ndarray, np.ndarray]:
     return np.array(data.data), np.array(data.target)
 
 
-def apply_pca(data_x: np.ndarray, n_components: int) -> Tuple[np.ndarray, np.ndarray]:
+def apply_pca(data_x: np.ndarray, n_components: int) -> tuple[np.ndarray, np.ndarray]:
     """
     Applies Principal Component Analysis (PCA) to reduce dimensionality.
 
