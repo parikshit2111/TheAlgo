@@ -1,6 +1,6 @@
 """
-Principal Component Analysis (PCA) is a dimensionality reduction technique 
-used in machine learning. It transforms high-dimensional data into a lower-dimensional 
+Principal Component Analysis (PCA) is a dimensionality reduction technique
+used in machine learning. It transforms high-dimensional data into a lower-dimensional
 representation while retaining as much variance as possible.
 
 This implementation includes:
