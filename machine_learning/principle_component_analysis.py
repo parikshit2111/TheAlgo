@@ -10,9 +10,10 @@ This implementation follows best practices, including:
 """
 
 import doctest
+
 import numpy as np
-from sklearn.decomposition import PCA
 from sklearn.datasets import load_iris
+from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
 
